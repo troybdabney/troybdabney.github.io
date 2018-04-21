@@ -209,11 +209,15 @@
                 border-color: #231f20;
             }
 
-            /* Proficiencies */
+            /* skills */
 
-            .proficiencies {
+            .skills {
                 padding-top: 5%;
                 width: 100%;
+            }
+            
+            .skills-img {
+                width: 50%;
             }
 
             .card-deck-container {
@@ -319,7 +323,7 @@
                             <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#proficiencies">Proficencies</a>
+                            <a class="nav-link" href="#skills">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#projects">Projects</a>
@@ -363,47 +367,47 @@
             </div>
         </section>
 
-        <section id="proficiencies" class="proficiencies z-depth-2">
+        <section id="skills" class="skills z-depth-2">
             <div class="container pb-5">
 
-                <h2 class="display-4 pb-5">Proficiencies</h2>
+                <h2 class="display-4 pb-5">Skills</h2>
 
 
                 <div class="container card-deck-container">
                     <div class="row card-body">
                         <div class="col-md-4 col-sm-6 card-container pb-5">
                             <div class="lead card-title">Adaptive Web Design</div>
-                            <img src="svg/Purple/svg/responsive.svg" class="icon pt-3" alt="...">
+                            <img src="images/responsive.svg" class="pt-3 skills-img" alt="Desktop, Tablet, and Mobile Device">
                             <p class="text-center pt-4">Designing sites that looks great on any device</p>
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
                             <div class="lead card-title">UX/UI Design</div>
-                            <img src="svg/svg/007-sketch (2).svg" class="icon pt-3" alt="...">
+                            <img src="images/wireframe.svg" class="pt-3 skills-img" alt="...">
                             <p class="text-center pt-4">Creating experiences for and because of users</p>
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
                             <div class="lead card-title">User Research + Usability</div>
-                            <img src="svg/Purple/svg/brainstorming.svg"S class="icon pt-3" alt="...">
+                            <img src="images/learning.svg" class="pt-3 skills-img" alt="...">
                             <p class="text-center pt-4">Ensuring effective, efficient, and satisfactory user experiences</p>
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
                             <div class="lead card-title">Information Architecture</div>
-                            <img src="svg/Purple/svg/sketch.svg" class="icon pt-3" alt="...">
+                            <img src="images/diagram.svg" class="pt-3 skills-img" alt="...">
                             <p class="text-center pt-4">Organizing and structuring content in an effective and sustainable way</p>
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
                             <div class="lead card-title">Branding</div>
-                            <img src="svg/Purple/svg/paper.svg" class="icon pt-3" alt="...">
+                            <img src="images/graphic-design.svg" class="pt-3 skills-img" alt="...">
                             <p class="text-center pt-4">Defining the visual identity of individuals and companies</p>
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Tech + Professional Communication</div>
-                            <img src="svg/Purple/svg/planning.svg" class="icon pt-3" alt="...">
+                            <div class="lead card-title">Digital Communication</div>
+                            <img src="images/computer.svg" class="pt-3 skills-img" alt="...">
                             <p class="text-center pt-4">Using technology to make information more useable and accessible </p>
                         </div>
                     </div>
@@ -661,7 +665,7 @@
             <i class="fa fa-angle-double-up" style="font-size:36px"></i>
         </button>
 
-        <!-- Optional JavaScript -->
+        <!-- Custom JavaScript -->
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
