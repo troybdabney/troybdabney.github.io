@@ -47,7 +47,7 @@
                 body {
                     background-color: transparent;
                 }
-                
+
                 .jumbotron {
                     padding-top: 20%;    
                 }
@@ -220,24 +220,23 @@
                 padding: 0;
             }
 
-            .aligned-card {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            .card {
+                border: 1px solid black;
+            }
+
+            .card-body {
+                text-align: center;
             }
 
             .card-title {
                 font-family: 'Arvo', serif;
                 color: #231f20;
-                padding: 6px 3px;
-                background-color: #fff;
             }
-            
-            .card-img-overlay {
-                margin: auto;
+
+            .card-icons {
+
             }
-            
+
             /* Section Divider #1*/
             .glasses {
 
@@ -369,63 +368,47 @@
 
                 <h2 class="display-4 pb-5">Proficiencies</h2>
 
+
                 <div class="container card-deck-container">
-                    <div class="card-deck">
-
-                        <div class="card mb-4">
-                            <img class="img-fluid" src="images/maik-jonietz-535261-unsplash_tlaljz.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title text-center">Adaptive Web Design</h4>
-                            </div>
+                    <div class="row card-body">
+                        <div class="col-md-4 col-sm-6 card-container pb-5">
+                            <div class="lead card-title">Adaptive Web Design</div>
+                            <img src="svg/Purple/svg/responsive.svg" class="icon pt-3" alt="...">
+                            <p class="text-center pt-4">Designing sites that looks great on any device</p>
                         </div>
 
-                        <div class="card mb-4">
-                            <img class="img-fluid" src="images/hal-gatewood-613602-unsplash_lvwm8i.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title text-center">UX/UI Design</h4>
-                            </div>
+                        <div class="col-md-4 col-sm-6 card-container pb-5">
+                            <div class="lead card-title">UX/UI Design</div>
+                            <img src="svg/svg/007-sketch (2).svg" class="icon pt-3" alt="...">
+                            <p class="text-center pt-4">Creating experiences for and because of users</p>
                         </div>
 
-                        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-
-                        <div class="card mb-4">
-                            <img class="img-fluid" src="images/daria-nepriakhina-474036-unsplash_pju07s.jpg" alt="Card image cap">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title text-center">User Research + Usability</h4>
-                            </div>
+                        <div class="col-md-4 col-sm-6 card-container pb-5">
+                            <div class="lead card-title">User Research + Usability</div>
+                            <img src="svg/Purple/svg/brainstorming.svg"S class="icon pt-3" alt="...">
+                            <p class="text-center pt-4">Ensuring effective, efficient, and satisfactory user experiences</p>
+                        </div>
+                        
+                        <div class="col-md-4 col-sm-6 card-container pb-5">
+                            <div class="lead card-title">Information Architecture</div>
+                            <img src="svg/Purple/svg/sketch.svg" class="icon pt-3" alt="...">
+                            <p class="text-center pt-4">Organizing and structuring content in an effective and sustainable way</p>
                         </div>
 
-                        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
-                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 on lg--></div>
-
-                        <div class="card mb-4">
-                            <img class="img-fluid" src="" alt="Card image cap">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title text-center">Information Architecture</h4>
-                            </div>
+                        <div class="col-md-4 col-sm-6 card-container pb-5">
+                            <div class="lead card-title">Branding</div>
+                            <img src="svg/Purple/svg/paper.svg" class="icon pt-3" alt="...">
+                            <p class="text-center pt-4">Defining the visual identity of individuals and companies</p>
                         </div>
 
-                        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-
-                        <div class="card mb-4">
-                            <img class="img-fluid" src="images/businesss-cards_iyeqjo.png" alt="Card image cap">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title text-center">Branding</h4>
-                            </div>
+                        <div class="col-md-4 col-sm-6 card-container pb-5">
+                            <div class="lead card-title">Tech + Professional Communication</div>
+                            <img src="svg/Purple/svg/planning.svg" class="icon pt-3" alt="...">
+                            <p class="text-center pt-4">Using technology to make information more useable and accessible </p>
                         </div>
-
-                        <div class="card mb-4">
-                            <img class="img-fluid" src="" alt="Card image cap">
-                            <div class="card-img-overlay">
-                                <h4 class="card-title text-center">Technical + Professional  Communication</h4>
-                            </div>
-                        </div>
-
-                        <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
-                        <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
-                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 on lg--></div>
-
                     </div>
+
+
                 </div>
             </div>
         </section>
@@ -659,7 +642,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img class="mr-3 col-lg-5 img-responsive img-frame h-50" src="images/RNTL_tfysp8.png" alt="RNTL App Screenshot">
+                        <img class="mr-3 col-lg-5 img-responsi  ve img-frame h-50" src="images/RNTL_tfysp8.png" alt="RNTL App Screenshot">
                     </li>
 
                 </ul>
