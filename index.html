@@ -387,7 +387,11 @@
 
             .jumbotron {
                 padding-top: 13vh;
-                background: url(images/jumbotron-bkgd2_qeeeky.png) center center fixed no-repeat;
+                background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
                 width: 100%;
                 height: auto;
             }
@@ -398,16 +402,6 @@
 
             .intro-text {
                 font-size: 1.5em;
-            }
-
-            .top-section {
-                /*
-                background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed; 
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                */
             }
 
             .z-depth-1 {
@@ -567,24 +561,26 @@
 
             /* Projects */
             #projects {
+                /*
+                border-top: 50px solid #231f20;
+                border-bottom: 10px solid #231f20;
+                */
                 padding: 5% 0;
             }
-
-            .aligned-box {
-                margin: auto;
-                width: 100%;
-                padding: 8vh;
-                font-family: 'Arvo', serif;
-                font-size: 1.5em;
+            .nav-pills > li > a {
+                color: #231f20 !important;
+                border: 1px solid black;
+                margin-right: 10px;
             }
-
-            .fp-link {
-                font-family: 'Open Sans', sans-serif;
+            .nav-pills > li > a.active {
+                background-color: #231f20 !important;
+                color: #ffffff !important;
             }
-
-            #project1>li>a {
-                font-family: 'Open Sans', sans-serif;
-                background-color: #231f20;
+            .nav-pills > li > a:hover {
+                color: teal !important;
+            }
+            .nav-link-color {
+                color: #231f20;
             }
 
             /* Contact */
@@ -606,8 +602,16 @@
                 height: 100%;
                 width: 100%;
                 background-color: #231f20;
-                background-attachment: scroll;
+                background-attachment: fixed;
                 color: #fff;
+            }
+            
+            .aligned-box {
+                margin: auto;
+                width: 100%;
+                padding: 8vh;
+                font-family: 'Arvo', serif;
+                font-size: 3.5vh;
             }
 
             /* Notes */
@@ -627,54 +631,53 @@
     </head>
 
     <body>
-        <section class="top-section">
-            <nav class="navbar navbar-expand-lg justify-content-end z-depth-2 container">
+        <nav class="navbar navbar-expand-lg justify-content-end z-depth-2 container">
 
-                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">                    
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">                    
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav justify-content-end mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
-                        </li>
-                    </ul>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav justify-content-end mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
 
-                    <span class="navbar-text">
-                        <a href="https://www.facebook.com/troybdabney" target="_blank">
-                            <i class="fa fa-facebook pr-4" style="font-size: 24px;"></i>
-                        </a>
-                        <a href="https://twitter.com/teebeedee_" target="_blank">
-                            <i class="fa fa-twitter pr-4" style="font-size: 24px;"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/troybdabney/" target="_blank">
-                            <i class="fa fa-linkedin pr-4" style="font-size: 24px;"></i>
-                        </a>
-                        <a href="https://codepen.io/teebeedee_/" target="_blank">
-                            <i class="fa fa-codepen pr-4" style="font-size: 24px;"></i>
-                        </a>
-                        <a href="https://www.behance.net/teebeedee_" target="_blank">
-                            <i class="fa fa-behance pr-4" style="font-size: 24px;"></i>
-                        </a>
-                        <a href="https://github.com/troybdabney" target="_blank">
-                            <i class="fa fa-github" style="font-size: 24px;"></i>
-                        </a>
-                    </span>
-                </div>
-            </nav>
-
+                <span class="navbar-text">
+                    <a href="https://www.facebook.com/troybdabney" target="_blank">
+                        <i class="fa fa-facebook pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://twitter.com/teebeedee_" target="_blank">
+                        <i class="fa fa-twitter pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/troybdabney/" target="_blank">
+                        <i class="fa fa-linkedin pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://codepen.io/teebeedee_/" target="_blank">
+                        <i class="fa fa-codepen pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://www.behance.net/teebeedee_" target="_blank">
+                        <i class="fa fa-behance pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://github.com/troybdabney" target="_blank">
+                        <i class="fa fa-github" style="font-size: 24px;"></i>
+                    </a>
+                </span>
+            </div>
+        </nav>
+        <section id="home">
             <div class="jumbotron jumbotron-fluid z-depth-2">
-                <div class="container">
+                <div class="container mt-5">
                     <h1 class="display-2 main-header">Troy B. Dabney</h1>
                     <p class="lead pb-3 intro-text">I'm a digital creative based in Montgomery, AL. I rely on my knowledge of principles in design, rhetoric, and communication to address the ever-changing demands I'm met with as a professional. With every new project, I strive to meet the needs of both my clients and the end users of my products with a unique combination of user-centered design, technology, and innovation.</p>
                     <p class="lead">
@@ -740,7 +743,6 @@
                 <h2 class="display-4 pb-5 pt-5">Featured Projects</h2>
 
                 <ul class="list-unstyled">
-
                     <li class="media my-4 row pb-2">
                         <div class="media-body col-lg-5">
                             <h3 class="mt-0 mb-1">Nonprofit Donation Page Mockup</h3>
@@ -864,28 +866,38 @@
                 <div class="container card-deck-container">
                     <div class="row card-body">
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="card-title">Ree's Treats  // Web Design</div>
+                            <div class="card-title">Ree's Treats</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Web Design -</h6>
+
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Pink Moon // Branding</div>
+                            <div class="lead card-title">Pink Moon Photography</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Branding -</h6>
+
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Janelle Monae  // Mixed Media Project</div>
-                            <img src="images/janelle-monae.png" class="pt-3 skills-img" alt="Gear drawn over back of a head">
+                            <div class="lead card-title">Janelle Monae</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Mixed Media Project -</h6>
+                            <img class="card-img-top" src="images/janelle-monae.png" alt="Card image cap">
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Southeastern Raptor Center Volunteer Guide // ___</div>
+                            <div class="lead card-title">Southeastern Raptor Center Volunteer Guide</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- User Research + Usability Testing -</h6>
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">By The Light // Branding</div>
+                            <div class="lead card-title">By The Light</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Branding -</h6>
+
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
-                            <div class="lead card-title">404 Error Page // UX/UI + Design</div>
+                            <div class="lead card-title">404 Error Page</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- UX/UI + Design -</h6>
+
                         </div>
                     </div>
                 </div>
