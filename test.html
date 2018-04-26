@@ -18,57 +18,38 @@
 
         <!-- Custom CSS-->
         <style>
-
             html {
                 font-size: 1.2rem;
             }
-
-            /* Media Queries */
-
             /* Extra small devices (portrait phones, less than 576px) */
             @media (max-width: 575.98px) { 
                 html {
                     font-size: .8rem;
                 }
-
                 body {
                     background-color: transparent;
                 }
-
-                .main-header {
+                .jumbotron {
                     padding-top: 40%;
                 }
 
-                .jumbotron {
-                    padding-top: 13vh;
-                    background: url(images/jumbotron-bkgd2_qeeeky.png) center center scroll no-repeat;
-                    width: 100%;
-                    height: auto;
+                .card-deck-container {
+                    font-size: 1.5em;
+                }
+                .intro-text {
+                    font-size: 1.5em;
                 }
             }
-
             /*Small devices (landscape phones, 576px and up)*/
             @media (min-width: 576px) and (max-width: 767.98px) { 
                 html {
                     font-size: 0.9rem;
                 }
-
                 body {
-                    background-color: pink;
+                    background-color: transparent;
                 }
-
-                .main-header {
-                    font-family: 'Arvo', serif;
-                    color: #fff;
-                    padding-top: 40%;
-                }
-
                 .jumbotron {
-                    padding-top: 13vh;
-                    background: url(images/jumbotron-bkgd2_qeeeky.png) center center scroll no-repeat;
-                    width: 100%;
-                    height: auto;
-                    padding-top: 40%;
+                    padding-top: 10%;
                 }
 
                 .card-deck-container {
@@ -78,36 +59,29 @@
                 .intro-text {
                     font-size: 1.35em;
                 }
-
             }
-
             /*Medium devices (tablets, 768px and up)*/
             @media (min-width: 768px) and (max-width: 991.98px) { 
                 html {
                     font-size: 1.2rem;
                 }
-
                 body {
                     background-color: transparent;
                 }
-
                 .jumbotron {
                     padding-top: 10%;
                 }
             }
-
             /*Large devices (laptops, 992px and up*/
             @media (min-width: 992px) and (max-width: 1199.98px) { 
                 html {
                     font-size: 1.1rem;
                 }
-
                 body {
                     background-color: transparent;
                 }
-
                 .jumbotron {
-                    padding-top: 1%;
+                    padding-top: 10%;
                 }
             }
 
@@ -116,340 +90,49 @@
                 html {
                     font-size: 1.1rem;
                 }
-
                 body {
                     background-color: transparent;
                 }
-
                 .jumbotron {
                     padding-top: 5%;
                 }
             }
-            /* Extra Media Queries */
-            /* ----------- iPhone 4 and 4S ----------- */
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 320px) 
-                and (max-device-width: 480px)
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 320px) 
-                and (max-device-width: 480px)
-                and (-webkit-min-device-pixel-ratio: 2)
-                and (orientation: portrait) {
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 320px) 
-                and (max-device-width: 480px)
-                and (-webkit-min-device-pixel-ratio: 2)
-                and (orientation: landscape) {
-
-            }
-
-            /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 320px) 
-                and (max-device-width: 568px)
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 320px) 
-                and (max-device-width: 568px)
-                and (-webkit-min-device-pixel-ratio: 2)
-                and (orientation: portrait) {
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 320px) 
-                and (max-device-width: 568px)
-                and (-webkit-min-device-pixel-ratio: 2)
-                and (orientation: landscape) {
-
-            }
-
-            /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 667px) 
-                and (-webkit-min-device-pixel-ratio: 2) { 
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 667px) 
-                and (-webkit-min-device-pixel-ratio: 2)
-                and (orientation: portrait) { 
-
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 667px) 
-                and (-webkit-min-device-pixel-ratio: 2)
-                and (orientation: landscape) { 
-
-            }
-
-            /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 414px) 
-                and (max-device-width: 736px) 
-                and (-webkit-min-device-pixel-ratio: 3) { 
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 414px) 
-                and (max-device-width: 736px) 
-                and (-webkit-min-device-pixel-ratio: 3)
-                and (orientation: portrait) { 
-
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 414px) 
-                and (max-device-width: 736px) 
-                and (-webkit-min-device-pixel-ratio: 3)
-                and (orientation: landscape) { 
-
-            }
-
-            /* ----------- iPhone X ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 812px) 
-                and (-webkit-min-device-pixel-ratio: 3) { 
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 812px) 
-                and (-webkit-min-device-pixel-ratio: 3)
-                and (orientation: portrait) { 
-
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 375px) 
-                and (max-device-width: 812px) 
-                and (-webkit-min-device-pixel-ratio: 3)
-                and (orientation: landscape) { 
-
-            }
-
-            /* ----------- iPad 1, 2, Mini and Air ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 768px) 
-                and (max-device-width: 1024px) 
-                and (-webkit-min-device-pixel-ratio: 1) {
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 768px) 
-                and (max-device-width: 1024px) 
-                and (orientation: portrait) 
-                and (-webkit-min-device-pixel-ratio: 1) {
-
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 768px) 
-                and (max-device-width: 1024px) 
-                and (orientation: landscape) 
-                and (-webkit-min-device-pixel-ratio: 1) {
-
-            }
-
-            /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 768px) 
-                and (max-device-width: 1024px) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Portrait */
-            @media only screen 
-                and (min-device-width: 768px) 
-                and (max-device-width: 1024px) 
-                and (orientation: portrait) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Landscape */
-            @media only screen 
-                and (min-device-width: 768px) 
-                and (max-device-width: 1024px) 
-                and (orientation: landscape) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* ----------- iPad Pro 10.5" ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 834px) 
-                and (max-device-width: 1112px)
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Portrait */
-            /* Declare the same value for min- and max-width to avoid colliding with desktops */
-            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-            @media only screen 
-                and (min-device-width: 834px) 
-                and (max-device-width: 834px) 
-                and (orientation: portrait) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Landscape */
-            /* Declare the same value for min- and max-width to avoid colliding with desktops */
-            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-            @media only screen 
-                and (min-device-width: 1112px) 
-                and (max-device-width: 1112px) 
-                and (orientation: landscape) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* ----------- iPad Pro 12.9" ----------- */
-
-            /* Portrait and Landscape */
-            @media only screen 
-                and (min-device-width: 1024px) 
-                and (max-device-width: 1366px)
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Portrait */
-            /* Declare the same value for min- and max-width to avoid colliding with desktops */
-            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-            @media only screen 
-                and (min-device-width: 1024px) 
-                and (max-device-width: 1024px) 
-                and (orientation: portrait) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Landscape */
-            /* Declare the same value for min- and max-width to avoid colliding with desktops */
-            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-            @media only screen 
-                and (min-device-width: 1366px) 
-                and (max-device-width: 1366px) 
-                and (orientation: landscape) 
-                and (-webkit-min-device-pixel-ratio: 2) {
-
-            }
-
-            /* Standard CSS */
-
-            .jumbotron {
-                padding-top: 13vh;
-                background: url(images/jumbotron-bkgd2_qeeeky.png) center center fixed no-repeat;
-                width: 100%;
-                height: auto;
-            }
-
-            .card-deck-container {
-                font-size: 1.5em;
-            }
-
-            .intro-text {
-                font-size: 1.5em;
-            }
-
             .top-section {
-                /*
                 background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed; 
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
                 background-size: cover;
-                */
+                width: 100%;
             }
-
             .z-depth-1 {
                 -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
                 box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
             }
-
             .z-depth-2 {
                 -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
                 box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
             }
-
             .z-depth-3 {
                 -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
                 box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
             }
-
             .jumbotron {
                 background-color: transparent;
                 color: white;
             }
-
-            /* Selected Text */
-            ::selection {
-                background-color: #583D6A;
-                color: #fff;
-            }
-
             /* Headers */
             h1 {
                 font-family: 'Arvo', serif;
                 color: #fff;
-                padding-top: 25%;
+                padding-top: 20%;
             }
-
             h2 {
                 font-family: 'Arvo', serif;
                 color: #231f20;
                 display: inline-block;
                 position: relative;
             }
-
             h2::after {
                 content: '';
                 position: absolute;
@@ -461,8 +144,10 @@
                 margin-top: 5px;
             }
 
-            h3 {
-                font-family: 'Arvo', serif;
+            /* Selected Text */
+            ::selection {
+                background-color: #583D6A;
+                color: #fff;
             }
             /* Navigation */
             .navbar {
@@ -472,29 +157,23 @@
                 text-transform: uppercase;
                 font-family: 'Open Sans', sans-serif;
             }
-
             .navbar a {
                 color: #231f20;
             }
-
             .navbar a:hover {
                 text-decoration: underline;
                 font-weight: bold;
             }
-
             .navbar-collapse {
                 background-color: white;
                 color: #FFF;
             }
-
             .navbar-text {
                 color: #231f20;
             }
-
             .custom-toggler .navbar-toggler-icon {
                 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35,31,32, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
             }
-
             /* Nav Button*/
             #myBtn {
                 display: none; /* Hidden by default */
@@ -511,97 +190,78 @@
                 border-radius: 10px; /* Rounded corners */
                 font-size: 18px; /* Increase font size */
             }
-
             #myBtn:hover {
                 background-color: #555; /* Add a dark-grey background on hover */
             } 
-
             /* Home */
             .resume-button {
                 background-color: #fff;
                 font-family: 'Arvo', serif;
                 color: #231f20;
             }
-
             .resume-button:hover {
                 background-color: #231f20;
                 color: #fff;
             }
-
             .btn-outline-dark {
                 border-color: #231f20;
             }
-
-            /* Skills */
+            /* skills */
             .skills {
                 padding-top: 5%;
                 width: 100%;
             }
-
             .skills-img {
                 width: 50%;
             }
-
             .skills-text {
                 font-family: 'Open Sans', sans-serif;
             }
-
             .card-deck-container {
                 padding: 0;
             }
-
             .card {
                 border: 1px solid black;
             }
-
             .card-body {
                 text-align: center;
             }
-
             .card-title {
                 font-family: 'Arvo', serif;
                 color: #231f20;
                 font-weight: bold;
                 font-size: 1.25em;
             }
-
-            /* Projects */
-            #projects {
-                padding: 5% 0;
-            }
-
-            .aligned-box {
-                margin: auto;
-                width: 100%;
-                padding: 8vh;
-                font-family: 'Arvo', serif;
-                font-size: 1.5em;
-            }
-
-            .fp-link {
-                font-family: 'Open Sans', sans-serif;
-            }
-
-            #project1>li>a {
-                font-family: 'Open Sans', sans-serif;
-                background-color: #231f20;
-            }
-
-            /* Contact */
-            .contact-text {
-                font-family: 'Open Sans', sans-serif;
-                font-size: 1.1em;
-            }
-
-            /* Section Dividers */
+            /* Section Divider #1*/
             .glasses {
-
                 background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
                 height: 200px; 
                 width: 100%;
                 background-color: #fff;
             }
-
+            /* Projects */
+            #projects {
+                /*
+                border-top: 50px solid #231f20;
+                border-bottom: 10px solid #231f20;
+                */
+                padding: 5% 0;
+            }
+            .nav-pills > li > a {
+                color: #231f20 !important;
+                border: 1px solid black;
+                margin-right: 10px;
+            }
+            .nav-pills > li > a.active {
+                background-color: #231f20 !important;
+                color: #ffffff !important;
+            }
+            .nav-pills > li > a:hover {
+                color: teal !important;
+            }
+            .nav-link-color {
+                color: #231f20;
+            }
             .black-div {
                 height: 100%;
                 width: 100%;
@@ -609,20 +269,41 @@
                 background-attachment: scroll;
                 color: #fff;
             }
+            .aligned-box {
+                margin: auto;
+                width: 100%;
+                padding: 8vh;
+                font-family: 'Arvo', serif;
+                font-size: 3.5vh;
+            }
+
+            .jm-card {
+                background: url(images/janelle-monae.png) center center scroll no-repeat;
+                height: 0%; 
+                width: 0%;
+            }
+            
+            .card-subtitle {
+                font-variant: small-caps;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            /* Contact */
+
+            .contact {
+                font-family: 'Open Sans', sans-serif;
+            }
+
 
             /* Notes */
             /*
-
-            Card deck code: https://www.codeply.com/go/nIB6oSbv6q            
-
+            card deck code: https://www.codeply.com/go/nIB6oSbv6q
             */
-
             /* Image Credits */
             /*
-            adaptive-web-design icon: Icon made by Freepik from www.flaticon.com is licensed by CC 3.0 BY           
-
+            adaptive-web-design icon: 
+            Icon made by Freepik from www.flaticon.com is licensed by CC 3.0 BY
             */
-
         </style>
     </head>
 
@@ -675,7 +356,7 @@
 
             <div class="jumbotron jumbotron-fluid z-depth-2">
                 <div class="container">
-                    <h1 class="display-2 main-header">Troy B. Dabney</h1>
+                    <h1 class="display-2">Troy B. Dabney</h1>
                     <p class="lead pb-3 intro-text">I'm a digital creative based in Montgomery, AL. I rely on my knowledge of principles in design, rhetoric, and communication to address the ever-changing demands I'm met with as a professional. With every new project, I strive to meet the needs of both my clients and the end users of my products with a unique combination of user-centered design, technology, and innovation.</p>
                     <p class="lead">
                         <a class="btn btn-light btn-lg resume-button btn-outline-dark" href="assets/Troy_Dabney's_Resume.pdf" role="button" target="_blank">Download My Résumé <i class="fa fa-file-text-o pl-1"></i></a>
@@ -688,6 +369,7 @@
             <div class="container pb-5">
 
                 <h2 class="display-4 pb-5">Skills</h2>
+
 
                 <div class="container card-deck-container">
                     <div class="row card-body">
@@ -727,6 +409,8 @@
                             <p class="text-center skills-text pt-4">Using technology to make information more useable and accessible </p>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </section>
@@ -740,7 +424,6 @@
                 <h2 class="display-4 pb-5 pt-5">Featured Projects</h2>
 
                 <ul class="list-unstyled">
-
                     <li class="media my-4 row pb-2">
                         <div class="media-body col-lg-5">
                             <h3 class="mt-0 mb-1">Nonprofit Donation Page Mockup</h3>
@@ -864,28 +547,38 @@
                 <div class="container card-deck-container">
                     <div class="row card-body">
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="card-title">Ree's Treats  // Web Design</div>
+                            <div class="card-title">Ree's Treats</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Web Design -</h6>
+
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Pink Moon // Branding</div>
+                            <div class="lead card-title">Pink Moon Photography</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Branding -</h6>
+
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Janelle Monae  // Mixed Media Project</div>
-                            <img src="images/janelle-monae.png" class="pt-3 skills-img" alt="Gear drawn over back of a head">
+                            <div class="lead card-title">Janelle Monae</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Mixed Media Project -</h6>
+                            <img class="card-img-top" src="images/janelle-monae.png" alt="Card image cap">
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Southeastern Raptor Center Volunteer Guide // ___</div>
+                            <div class="lead card-title">Southeastern Raptor Center Volunteer Guide</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Category -</h6>
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">By The Light // Branding</div>
+                            <div class="lead card-title">By The Light</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- Branding -</h6>
+
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
-                            <div class="lead card-title">404 Error Page // UX/UI + Design</div>
+                            <div class="lead card-title">404 Error Page</div>
+                            <h6 class="card-subtitle mb-2 text-muted">- UX/UI + Design -</h6>
+
                         </div>
                     </div>
                 </div>
@@ -909,7 +602,7 @@
 
                 <h2 class="display-4 py-5">Let's Connect</h2>
 
-                <p class="lead text-justify contact-text">Thank you for reviewing my portfolio! Please feel free to reach out to me to discuss working together in the future. You can reach me by email at <a href="mailto:troybdabney@gmail.com">troybdabney@gmail.com</a> or by phone at 334-721-3439.</p>
+                <p class="lead text-justify">Thank you for reviewing my portfolio! Please feel free to reach out to me to discuss working together in the future. You can reach me by email at <a href="mailto:troybdabney@gmail.com">troybdabney@gmail.com</a> or by phone at 334-721-3439.</p>
 
                 <img src="images/TBD_Logo_-_Black_nwtpqj.svg" class="col-sm-4 offset-sm-4" alt="TBD Logo">
             </div>
@@ -923,7 +616,6 @@
         <script>
             // When the user scrolls down 20px from the top of the document, show the button
             window.onscroll = function() {scrollFunction()};
-
             function scrollFunction() {
                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                     document.getElementById("myBtn").style.display = "block";
@@ -931,7 +623,6 @@
                     document.getElementById("myBtn").style.display = "none";
                 }
             }
-
             // When the user clicks on the button, scroll to the top of the document
             function topFunction() {
                 document.body.scrollTop = 0; // For Safari
