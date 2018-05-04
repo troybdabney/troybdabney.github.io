@@ -34,23 +34,12 @@
                 body {
                     background-color: gold;
                 }
-                
+
                 .home-container {
-                    padding-top: 120px;
+                    padding-top: 140px;
+                    width: 100%;
+                    height: auto;
                 }
-
-                /*
-                .main-header {
-                padding-top: 40%;
-            }
-
-                .jumbotron {
-                padding-top: 13vh;
-                background: url(images/jumbotron-bkgd2_qeeeky.png) center center scroll no-repeat;
-                width: 100%;
-                height: auto;
-            }
-                */
             }
 
             /*Small devices (landscape phones, 576px and up)*/
@@ -60,13 +49,13 @@
                 }
 
                 body {
-                    background-color: pink;
+                    background-color: transparent;
                 }
-                
+
                 .home-container {
                     padding-top: 100px;
                 }
-                
+
                 /*
 
                 .main-header {
@@ -119,9 +108,6 @@
                     background-color: transparent;
                 }
 
-                .jumbotron {
-                    padding-top: 1%;
-                }
             }
 
             /*Extra Large devices (desktops, 992px and up*/
@@ -140,6 +126,7 @@
             }
                 */
             }
+            
             /* Extra Media Queries */
             /* ----------- iPhone 4 and 4S ----------- */
             /* Portrait and Landscape */
@@ -582,6 +569,11 @@
                 */
                 padding: 5% 0;
             }
+            
+            .nav-item {
+                border-radius:0;
+            }
+            
             .nav-pills > li > a {
                 color: #231f20 !important;
                 border: 1px solid black;
@@ -590,11 +582,17 @@
             .nav-pills > li > a.active {
                 background-color: #231f20 !important;
                 color: #ffffff !important;
+                
             }
             .nav-pills > li > a:hover {
-                color: teal !important;
+                font-weight: bold;
             }
             .nav-link-color {
+                color: #231f20;
+            }
+
+            .card-subtitle {
+                font-variant: small-caps;
                 color: #231f20;
             }
 
@@ -689,14 +687,14 @@
                 </span>
             </div>
         </nav>
-        
+
         <section id="home">
             <div class="jumbotron jumbotron-fluid z-depth-2">
                 <div class="container mt-5 home-container">
                     <h1 class="display-2 main-header">Troy B. Dabney</h1>
                     <p class="lead pb-3 intro-text">I'm a digital creative based in Montgomery, AL. I rely on my knowledge of principles in design, rhetoric, and communication to address the ever-changing demands I'm met with as a professional. With every new project, I strive to meet the needs of both my clients and the end users of my products with a unique combination of user-centered design, technology, and innovation.</p>
                     <p class="lead">
-                        <a class="btn btn-light btn-lg resume-button btn-outline-dark" href="assets/Troy_Dabney's_Resume.pdf" role="button" target="_blank">Download My Résumé <i class="fa fa-file-text-o pl-1"></i></a>
+                        <a class="btn btn-light btn-lg resume-button btn-outline-dark" href="assets/Troy_B_Dabney_Resume.pdf" role="button" target="_blank">Download My Résumé <i class="fa fa-file-text-o pl-1"></i></a>
                     </p>
                 </div>
             </div>
@@ -760,55 +758,52 @@
                 <ul class="list-unstyled">
                     <li class="media my-4 row pb-2">
                         <div class="media-body col-lg-5">
-                            <h3 class="mt-0 mb-1">Nonprofit Donation Page Mockup</h3>
+                            <h3 class="mt-0 mb-3">Donation Page Prototype</h3>
+                            <h6 class="card-subtitle mb-2 text-justify">UX/UI Designer | Project Manager | User Researcher</h6>
 
                             <ul id="project1" class="nav flex-lg-column nav-pills nav-fill mb-3 mt-4" id="pills-tab" role="tablist">
-                                <li class="nav-item">
+                                <li class="nav-item pb-2">
                                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#npdp-situation" role="tab" aria-controls="pills-home" aria-selected="true">Situation</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item pb-2">
                                     <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#npdp-task" role="tab" aria-controls="pills-profile" aria-selected="false">Task</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item pb-2">
                                     <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#npdp-action" role="tab" aria-controls="pills-contact" aria-selected="false">Action</a>
                                 </li>
-                                <li class="nav-item">
+                                <li class="nav-item pb-2">
                                     <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#npdp-result" role="tab" aria-controls="pills-contact" aria-selected="false">Results</a>
                                 </li>
                             </ul>
-
-
-
                         </div>
 
                         <div class="col-lg-7">
                             <div class="tab-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="npdp-situation" role="tabpanel" aria-labelledby="pills-home-tab">
-                                    <p>Using UX design principles and user research, I redesigned the Southern Poverty Law Center's donation page.</p>
-                                    <p>As the Digital Marketing Specialist, I'm in charge of redesigning the donation page to offer a compelling and easy to use donation experience. The donation page is hosted on a different platform, but branding and consistency had to be maintained regardless.</p>
+                                    <p>I work as the Digital Marketing Specialist at the Southern Poverty Law Center. In recent years, we’ve grown in size. The SPLC’s website was updated in 2015, but the branding of the current donation page still matches our old site. Our current donation page needs to be updated to match our growth and the current expectations of our donors.</p>
+                                    <p>The SPLC needs a page that’s user friendly and responsive. The page also need to clearly explain what types of gifts can be made, direct donors to their right page for their gift type, and obtain the necessary information we’d need in-house to process each gift. We also needed a more integrated donation experience for people who want to donate via PayPal.</p>
                                 </div>
 
                                 <div class="tab-pane fade" id="npdp-task" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                    <p>Before picking up a pen or pointing a cursor, I conducted a task analysis to learn what would benefit our donors on the new donation page.</p>
-                                    <p>After obtaining the feedback by conducting usability testing, I used the data to generate wireframes and prototypes for internal stakeholders to approve.</p>
-                                    <p>I also needed to research best donation page practices and determine what features were necessary to offer our donors and which aspects weren't.</p>
-                                    <p>I collaborated with the SPLC's Marketing, Digital, and Design teams to create a donation page that can grow with the needs of the organization and its donors'.</p>
+                                    <p>My goals for the project were to redesign the donation page in terms of functionality, user experience, and visual design.</p>
+                                    <p>I needed to a) enhance the user experience in order to increase donor satisfaction, b) new page needed to meet internal needs by capturing all the data our gift processing teams would need, c) contribute to an increased number of gifts via online donation.</p>
+                                    <p>Responsive design was also necessary because studies show that people who donate to charitable organizations give more on mobile devices.</p>
                                 </div>
 
                                 <div class="tab-pane fade" id="npdp-action" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <h4>User Feedback</h4>
                                     <p>I setup an inbox to obtain feedback from donors who encountered issues with our existing donation page. This established an open channel of communication through which we could learn about our donors' unique needs, suggestions, and troubles.</p>
 
                                     <p>From this and usability testing, I learned that multiple, single-objective pages would work best for our donors.</p>
 
-                                    <h4>Web Development</h4>
                                     <p>After I drafted low-fidelity wireframes for the new page based on direct user feedback, I used Bootstrap to develop dynamic prototypes.</p>
                                 </div>
 
                                 <div class="tab-pane fade" id="npdp-result" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <p>We haven't launched the new donation pages yet, but the live versions of the donation pages are now in the final stage of development. More usability testing will be conducted after the pages go live to ensure that both the SPLC and its supporters' needs are adequately being met.</p>
+                                    <p>A vendor is in charge of deploying the final donation page, but as the project manager/lead, I’m in charge of seeing it through to completion.</p>
+                                    <p>I’m currently working with the developer and the internal team to prepare for the soft launch.</p>
+                                    <p>I’m creating usability test for making sure it’s ready to be launched 100%.</p>
+                                    <p>You can view the <a href="">original donation page</a> here and see the <a href="">prototypes of the new donation pages</a> here.</p>
                                 </div>
-
                             </div>
                         </div>
 
@@ -882,36 +877,40 @@
                     <div class="row card-body">
                         <div class="col-sm-6 card-container pb-5">
                             <div class="card-title">Ree's Treats</div>
-                            <h6 class="card-subtitle mb-2 text-muted">- Web Design -</h6>
+                            <h6 class="card-subtitle mb-2">- Web Design -</h6>
+                            <img class="card-img-top z-depth-1" src="images/rees-treats.png" alt="Card image cap">
+
 
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
                             <div class="lead card-title">Pink Moon Photography</div>
-                            <h6 class="card-subtitle mb-2 text-muted">- Branding -</h6>
+                            <h6 class="card-subtitle mb-2">- Branding -</h6>
+                            <img class="card-img-top z-depth-1" src="images/pink-moon.png" alt="Card image cap">
 
+                            <!--                            <p>papercute + cedarville fonts</p>-->
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
                             <div class="lead card-title">Janelle Monae</div>
-                            <h6 class="card-subtitle mb-2 text-muted">- Mixed Media Project -</h6>
-                            <img class="card-img-top" src="images/janelle-monae.png" alt="Card image cap">
+                            <h6 class="card-subtitle mb-2">- Mixed Media Project -</h6>
+                            <img class="card-img-top z-depth-1" src="images/janelle-monae.png" alt="Card image cap">
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
                             <div class="lead card-title">Southeastern Raptor Center Volunteer Guide</div>
-                            <h6 class="card-subtitle mb-2 text-muted">- User Research + Usability Testing -</h6>
+                            <h6 class="card-subtitle mb-2">- User Research + Usability Testing -</h6>
                         </div>
 
                         <div class="col-sm-6 card-container pb-5">
                             <div class="lead card-title">By The Light</div>
-                            <h6 class="card-subtitle mb-2 text-muted">- Branding -</h6>
+                            <h6 class="card-subtitle mb-2">- Branding -</h6>
 
                         </div>
 
                         <div class="col-md-4 col-sm-6 card-container pb-5">
                             <div class="lead card-title">404 Error Page</div>
-                            <h6 class="card-subtitle mb-2 text-muted">- UX/UI + Design -</h6>
+                            <h6 class="card-subtitle mb-2">- UX/UI + Design -</h6>
 
                         </div>
                     </div>
@@ -938,7 +937,7 @@
 
                 <p class="lead text-justify contact-text">Thank you for reviewing my portfolio! Please feel free to reach out to me to discuss working together in the future. You can reach me by email at <a href="mailto:troybdabney@gmail.com">troybdabney@gmail.com</a> or by phone at 334-721-3439.</p>
 
-                <img src="images/TBD_Logo_-_Black_nwtpqj.svg" class="col-sm-4 offset-sm-4" alt="TBD Logo">
+                <img src="images/TBD%20X.png" class="col-sm-4 offset-sm-4" alt="TBD Logo">
             </div>
         </section>
 

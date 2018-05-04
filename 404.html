@@ -7,32 +7,70 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
-        <link href="https://fonts.googleapis.com/css?family=Audiowide|Monoton" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Bangers|Oswald" rel="stylesheet">
+
+        <!--
+        font-family: 'Bangers', cursive;
+        font-family: 'Oswald', sans-serif;
+        -->
 
         <!-- Custom CSS -->
         <style>
             html { 
-                background:  url(images/miguel-oros-472818-unsplash.jpg) no-repeat center center fixed; 
+                background-color: #eae7dc;
                 background-size: cover;
             }
             h1{
-                font-family: 'Monoton', cursive;
-                font-size: 6em;
+                font-family: 'Bangers', cursive;
+                font-size: 15vh;
                 margin: .2em .5em;
                 color: lightblue;
             }
             body {
+                background-color:  transparent;
+            }
+
+            .main {
                 height: 100%;
+                margin-top: 10em;
                 background-color: lightcoral;
                 text-align: center;
+                -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
+                box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
             }
+
+            .main-links {
+                background-color: #eae7dc;
+                font-family: 'Oswald', sans-serif;
+            }
+
         </style>
 
 
         <title>Hello, world!</title>
     </head>
     <body>
+        <div class="container main">
+            <h1>Let's get you out of here.</h1>
+        </div>
+
+        <div class="container fixed-bottom main-links">
+            <ul class="nav nav-fill">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Longer nav link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
