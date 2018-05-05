@@ -922,10 +922,6 @@
             }
 
             /* Selected Text */
-            ::selection {
-                background-color: #583D6A;
-                color: #fff;
-            }
 
             /* Headers */
             h1 {
@@ -954,18 +950,32 @@
 
             h3 {
                 font-family: 'Arvo', serif;
+                color: #231f20;
+                font-weight: bold;
+                font-size: 2em;
             }
-            
+
             a {
-                color: #583D6A;
+                color: #000;
                 font-weight: bold;
+                text-decoration: underline;
             }
-            
+
             a:hover {
-                color: #583D6A;
+                color: #333;
                 font-weight: bold;
             }
-            
+
+            ::selection {
+                background-color: #666;
+                color: #fff;
+            }
+
+            a::selection {
+                background-color: #666;
+                color: #000;
+            }
+
             /* Navigation */
             .navbar {
                 background-color: white;
@@ -1085,6 +1095,7 @@
                 color: #231f20 !important;
                 border: 1px solid black;
                 margin-right: 10px;
+                font-family: 'Open Sans', sans-serif;
             }
             .nav-pills > li > a.active {
                 background-color: #231f20 !important;
@@ -1099,8 +1110,14 @@
             }
 
             .card-subtitle {
+                font-family: 'Open Sans', sans-serif;
                 font-variant: small-caps;
                 color: #231f20;
+            }
+
+            .tab-content {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.1em;
             }
 
             /* Contact */
@@ -1262,11 +1279,11 @@
             <div class="container">
                 <h2 class="display-4 pb-5 pt-5">Featured Projects</h2>
 
-                <ul class="list-unstyled">
+                <ul class="list-unstyled container">
                     <li class="media my-4 row pb-2">
                         <div class="media-body col-lg-12">
                             <h3 class="mt-0 mb-3">Donation Page Prototype</h3>
-                            <h6 class="card-subtitle mb-2 text-justify">UX/UI Designer | Project Manager | User Researcher</h6>
+                            <h6 class="card-subtitle mb-2 text-justify"><em>UX/UI Designer | Project Manager | User Researcher</em></h6>
                             <ul id="project1" class="nav nav-pills nav-fill mb-3 mt-4" id="pills-tab" role="tablist">
                                 <li class="nav-item pb-2">
                                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#npdp-situation" role="tab" aria-controls="pills-home" aria-selected="true">Situation</a>
@@ -1320,7 +1337,7 @@
                     <li class="media my-4 row pb-2">
                         <div class="media-body col-lg-12">
                             <h3 class="mt-0 mb-1">Website Migration + Redesign</h3>
-                            <h6 class="card-subtitle mb-2 mt-2 text-justify">Content Auditor + Strategist | Designer | Technical Editor</h6>
+                            <h6 class="card-subtitle mb-2 mt-2 text-justify"><em>Content Auditor + Strategist | Designer | Technical Editor</em></h6>
                             <ul id="project-2" class="nav nav-pills nav-fill mb-3 mt-4" id="pills-tab" role="tablist">
                                 <li class="nav-item pb-2">
                                     <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#ouw-situation" role="tab" aria-controls="pills-home" aria-selected="true">Situation</a>
@@ -1377,40 +1394,40 @@
 
                 <div class="container card-deck-container">
                     <div class="row card-body">
-                        <div class="col-sm-6 card-container pb-5">
+                        <div class="col-md-4 col-sm-12 card-container pb-5">
                             <div class="card-title">Ree's Treats</div>
                             <h6 class="card-subtitle mb-2">- Web Design -</h6>
                             <img class="card-img-top z-depth-1 col-md-9" src="images/rees-treats.png" alt="Card image cap">
                         </div>
 
-                        <div class="col-sm-6 card-container pb-5">
+                        <div class="col-md-4 col-sm-12 card-container pb-5">
                             <div class="lead card-title">Janelle Monae</div>
                             <h6 class="card-subtitle mb-2">- Mixed Media Project -</h6>
                             <a href="http://tbd0011.wixsite.com/janellemonae" target="_blank"><img class="card-img-top z-depth-1 col-md-8" src="images/janelle-monae.png" alt="Card image cap"></a>
                         </div>
 
-<!--
-                        <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">Southeastern Raptor Center Volunteer Guide</div>
-                            <h6 class="card-subtitle mb-2">- User Research + Usability Testing -</h6>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 card-container pb-5">
-                            <div class="lead card-title">404 Error Page</div>
-                            <h6 class="card-subtitle mb-2">- UX/UI + Design -</h6>
-                        </div>
--->
-
-                        <div class="col-sm-6 card-container pb-5">
+                        <div class="col-md-4 col-sm-12 card-container pb-5">
                             <div class="lead card-title">Pink Moon Photography</div>
                             <h6 class="card-subtitle mb-2">- Branding -</h6>
                             <img class="card-img-top z-depth-1 col-md-9" src="images/pink-moon.png" alt="Card image cap">
                         </div>  
 
-                        <div class="col-sm-6 card-container pb-5">
-                            <div class="lead card-title">By The Light</div>
-                            <h6 class="card-subtitle mb-2">- Branding -</h6>
-                        </div>
+                        <!--
+<div class="col-sm-6 card-container pb-5">
+<div class="lead card-title">By The Light</div>
+<h6 class="card-subtitle mb-2">- Branding -</h6>
+</div>
+<div class="col-sm-6 card-container pb-5">
+<div class="lead card-title">Southeastern Raptor Center Volunteer Guide</div>
+<h6 class="card-subtitle mb-2">- User Research + Usability Testing -</h6>
+</div>
+
+<div class="col-md-4 col-sm-6 card-container pb-5">
+<div class="lead card-title">404 Error Page</div>
+<h6 class="card-subtitle mb-2">- UX/UI + Design -</h6>
+</div>
+-->
+
                     </div>
                 </div>
 
@@ -1432,10 +1449,11 @@
             <div class="container">
 
                 <h2 class="display-4 py-5">Let's Connect</h2>
+                <div class="container">
+                    <p class="lead text-justify contact-text">Thank you for reviewing my portfolio! Please feel free to reach out to me to discuss working together in the future. You can reach me by email at <a href="mailto:troybdabney@gmail.com">troybdabney@gmail.com</a> or by phone at 334-721-3439.</p>
 
-                <p class="lead text-justify contact-text">Thank you for reviewing my portfolio! Please feel free to reach out to me to discuss working together in the future. You can reach me by email at <a href="mailto:troybdabney@gmail.com">troybdabney@gmail.com</a> or by phone at 334-721-3439.</p>
-
-                <img src="images/TBD%20X.png" class="col-sm-4 offset-sm-4" alt="TBD Logo">
+                    <img src="images/TBD%20X.png" class="col-sm-4 offset-sm-4" alt="TBD Logo">
+                </div>
             </div>
         </section>
 
