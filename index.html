@@ -31,7 +31,7 @@
                 font-size: 1.2rem;
             }
 
-            /* Media Queries */
+            /* General Media Queries */
 
             /* Extra small devices (portrait phones, less than 576px) */
             @media (max-width: 575.98px) { 
@@ -136,6 +136,7 @@
             }
 
             /* iOS Media Queries */
+
             /* ----------- iPhone 4 and 4S ----------- */
             /* Portrait and Landscape */
             @media only screen 
@@ -880,6 +881,7 @@
 
             }
 
+
             /* Standard CSS */
 
             .jumbotron {
@@ -1083,10 +1085,6 @@
 
             /* Projects */
             #projects {
-                /*
-                border-top: 50px solid #231f20;
-                border-bottom: 10px solid #231f20;
-                */
                 padding: 5% 0;
             }
 
@@ -1100,14 +1098,17 @@
                 margin-right: 10px;
                 font-family: 'Open Sans', sans-serif;
             }
+
             .nav-pills > li > a.active {
                 background-color: #231f20 !important;
                 color: #ffffff !important;
 
             }
+
             .nav-pills > li > a:hover {
                 font-weight: bold;
             }
+
             .nav-link-color {
                 color: #231f20;
             }
@@ -1122,7 +1123,7 @@
                 font-family: 'Open Sans', sans-serif;
                 font-size: 1.1em;
             }
-            
+
             .figure-caption {
                 font-family: 'Arvo', serif;
             }
@@ -1171,16 +1172,26 @@
 
             */
 
+            /*
+            <!--
+            <figure class="figure pt-4">
+            <img src="images/original-splc-donation-page.png" class="figure-img img-fluid rounded z-depth-1 " alt="The current, original SPLC donation page.">
+            <figcaption class="figure-caption">The current, original SPLC donation page.</figcaption>
+            </figure>
+            </div>
+            -->
+            */
+
         </style>
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg justify-content-end z-depth-2 container">
+        <nav id="navigation" class="navbar navbar-expand-lg justify-content-end z-depth-2 container">
             <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">                    
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarText">
+            <div id="navbarText" class="collapse navbar-collapse">
                 <ul class="navbar-nav justify-content-end mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
@@ -1278,7 +1289,7 @@
             </div>
         </section>
 
-        <section class="z-depth-2">
+        <section id="glasses" class="z-depth-2">
             <div class="container-fluid glasses"></div>
         </section>
 
@@ -1318,30 +1329,29 @@
                                     <p>My goals for the project were to redesign the donation page in terms of functionality, user experience, and visual design.</p>
                                     <p>I needed to a) enhance the user experience in order to increase donor satisfaction, b) new page needed to meet internal needs by capturing all the data our gift processing teams would need, c) contribute to an increased number of gifts via online donation.</p>
                                     <p>Responsive design was also necessary because studies show that people who donate to charitable organizations give more on mobile devices.</p>
-                                    
-                                    <figure class="figure pt-4">
-                                        <img src="images/original-splc-donation-page.png" class="figure-img img-fluid rounded z-depth-1 " alt="The current, original SPLC donation page.">
-                                        <figcaption class="figure-caption">The current, original SPLC donation page.</figcaption>
-                                    </figure>
                                 </div>
 
                                 <div class="tab-pane fade" id="npdp-action" role="tabpanel" aria-labelledby="pills-contact-tab">
-                                    <p>I setup an inbox to obtain feedback from donors who encountered issues with our existing donation page. This established an open channel of communication through which we could learn about our donors' unique needs, suggestions, and troubles.</p>
+                                    <h4>User Research</h4>
+                                    <p>My process began by talking to internal stakeholders across the organization to see what their goals are for the new donation page. During this phase, I also learned about the capabilities of the technology that would support the new page.</p>
 
-                                    <p>From this and usability testing, I learned that multiple, single-objective pages would work best for our donors.</p>
+                                    <p>Next, I conducted user research online. I created an organizational email inbox so that supporters could easily let us know about issues they encounter with our site and with our emails; captured user data from surveys (Google Forms); and examined competitors’ donation pages; and studied best practices and trends on online giving. I determined that multiple donation pages would be best for our supporters and for our in-house team.</p>
 
-                                    <p>After I drafted low-fidelity wireframes for the new page based on direct user feedback, I used Bootstrap to develop dynamic prototypes.</p>
-                                </div>
+                                    <h4>Design</h4>
+                                    <p>I used the data to create wireframes that soon became a high-fidelity prototype of the new design. Early testing with test participants was not conducted because the developer’s process involved having a working example of what they needed to code.</p>
+
+                                    <p>I designed the new pages using the Bootstrap framework so that our developers could easily build upon its innate responsiveness. I carefully considered the order and organization of the forms’ sections and fields, and learned about the optimal flow of the donation process through usability testing.</p>
+                                    <p>I designed it to be consistent with our brand and to decrease gift abandonment due to frustration with our current page (e.g., completing a donation then realizing that you had to use a different page to send an eCard.)</p>
+</div>
 
                                 <div class="tab-pane fade" id="npdp-result" role="tabpanel" aria-labelledby="pills-contact-tab">
                                     <p>A vendor is in charge of deploying the final donation page, but as the project manager/lead, I’m in charge of seeing it through to completion.</p>
                                     <p>I’m currently working with the developer and the internal team to prepare for the soft launch.</p>
                                     <p>I’m creating usability test for making sure it’s ready to be launched 100%.</p>
                                     <p>You can view the <a href="https://donate.splcenter.org/sslpage.aspx?pid=463" target="_blank">original donation page</a> here and see the <a href="https://codepen.io/collection/XmRQdG/" target="_blank">prototypes of the new donation pages</a> here.</p>
-                                </div>
+</div>
                             </div>
                         </div>
-
                     </li>
 
                     <hr class="pt-4">
@@ -1514,7 +1524,7 @@
             </div>
         </section>
 
-        <section class="z-depth-2">
+        <section id="black" class="z-depth-2">
             <div class="container-fluid black-div">
                 <div class="row">
                     <div class="col-md-12">
@@ -1537,7 +1547,7 @@
             </div>
         </section>
 
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <button id="myBtn" onclick="topFunction()" title="Go to top">
             <i class="fa fa-angle-double-up" style="font-size:36px"></i>
         </button>
 
@@ -1561,7 +1571,7 @@
             }
         </script>
 
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <!-- jQuery, Popper.js, and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
