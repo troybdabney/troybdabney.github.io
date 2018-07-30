@@ -1,79 +1,1284 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <!-- Required meta tags -->
+        <!-- Meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta property="og:title" content="Hi, I'm Troy" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://troybdabney.github.io/" />
+        <meta property="og:image" content="https://res.cloudinary.com/teebeedee/image/upload/v1487101763/troylogo_gttein.png" />
+        <meta name="description" content="I'm a digital creative based in the South. I rely on my knowledge of principles in design, rhetoric, and communication to address the ever-changing demands and expectations I face as a professional.">
+        <meta name="author" content="Troy B. Dabney">
+        <meta name="keywords" content="Troy Dabney, Web Design, UX/UI, HTML, CSS, Information Architecture">
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-        <link href="https://fonts.googleapis.com/css?family=Bangers|Oswald" rel="stylesheet">
+        <title>Hi, I'm Troy</title>
 
-        <!--
-        font-family: 'Bangers', cursive;
-        font-family: 'Oswald', sans-serif;
-        -->
+        <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+        <link rel="manifest" href="images/favicons/site.webmanifest">
+        <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
 
-        <!-- Custom CSS -->
+        <!-- Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans" rel="stylesheet">
+        <!-- font-family: 'Arvo', serif; font-family: 'Open Sans', sans-serif; -->
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Custom CSS-->
         <style>
-            html { 
-                background-color: #eae7dc;
-                background-size: cover;
-            }
-            h1{
-                font-family: 'Bangers', cursive;
-                font-size: 15vh;
-                margin: .2em .5em;
-                color: lightblue;
-            }
-            body {
-                background-color:  transparent;
+
+            html {
+                font-size: 1.2rem;
             }
 
-            .main {
-                height: 100%;
-                margin-top: 10em;
-                background-color: lightcoral;
-                text-align: center;
+            /* General Media Queries */
+
+            /* Extra small devices (portrait phones, less than 576px) */
+            @media (max-width: 575.98px) { 
+                html {
+                    font-size: .8rem;
+                }
+
+                body {
+                    background-color: transparent;
+                }
+
+                .home-container {
+                    padding-top: 140px;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            /*Small devices (landscape phones, 576px and up)*/
+            @media (min-width: 576px) and (max-width: 767.98px) { 
+                html {
+                    font-size: 0.9rem;
+                }
+
+                body {
+                    background-color: transparent;
+                }
+
+                .home-container {
+                    padding-top: 100px;
+                }
+
+                /*
+
+                .main-header {
+                font-family: 'Arvo', serif;
+                color: #fff;
+                padding-top: 40%;
+            }
+
+                .jumbotron {
+                padding-top: 13vh;
+                background: url(images/jumbotron-bkgd2_qeeeky.png) center center scroll no-repeat;
+                width: 100%;
+                height: auto;
+                padding-top: 40%;
+            }
+
+                .card-deck-container {
+                font-size: 1.25em;
+            }
+
+                .intro-text {
+                font-size: 1.35em;
+            }
+                */
+
+            }
+
+            /*Medium devices (tablets, 768px and up)*/
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+                html {
+                    font-size: 1.2rem;
+                }
+
+                body {
+                    background-color: transparent;
+                }
+
+                .jumbotron {
+                    padding-top: 10%;
+                }
+            }
+
+            /*Large devices (laptops, 992px and up*/
+            @media (min-width: 992px) and (max-width: 1199.98px) { 
+                html {
+                    font-size: 1.1rem;
+                }
+
+                body {
+                    background-color: transparent;
+                }
+
+            }
+
+            /*Extra Large devices (desktops, 992px and up*/
+            @media (min-width: 1200px) { 
+                html {
+                    font-size: 1.1rem;
+                }
+
+                body {
+                    background-color: transparent;
+                }
+
+                /*
+                .jumbotron {
+                padding-top: 5%;
+            }
+                */
+            }
+
+            /* iOS Media Queries */
+
+            /* ----------- iPhone 4 and 4S ----------- */
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2)
+                and (orientation: portrait) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 480px)
+                and (-webkit-min-device-pixel-ratio: 2)
+                and (orientation: landscape) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 568px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 568px)
+                and (-webkit-min-device-pixel-ratio: 2)
+                and (orientation: portrait) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 320px) 
+                and (max-device-width: 568px)
+                and (-webkit-min-device-pixel-ratio: 2)
+                and (orientation: landscape) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 667px) 
+                and (-webkit-min-device-pixel-ratio: 2) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 667px) 
+                and (-webkit-min-device-pixel-ratio: 2)
+                and (orientation: portrait) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 667px) 
+                and (-webkit-min-device-pixel-ratio: 2)
+                and (orientation: landscape) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 414px) 
+                and (max-device-width: 736px) 
+                and (-webkit-min-device-pixel-ratio: 3) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 414px) 
+                and (max-device-width: 736px) 
+                and (-webkit-min-device-pixel-ratio: 3)
+                and (orientation: portrait) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 414px) 
+                and (max-device-width: 736px) 
+                and (-webkit-min-device-pixel-ratio: 3)
+                and (orientation: landscape) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPhone X ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 812px) 
+                and (-webkit-min-device-pixel-ratio: 3) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 812px) 
+                and (-webkit-min-device-pixel-ratio: 3)
+                and (orientation: portrait) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 375px) 
+                and (max-device-width: 812px) 
+                and (-webkit-min-device-pixel-ratio: 3)
+                and (orientation: landscape) { 
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPad 1, 2, Mini and Air ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 768px) 
+                and (max-device-width: 1024px) 
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 768px) 
+                and (max-device-width: 1024px) 
+                and (orientation: portrait) 
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 768px) 
+                and (max-device-width: 1024px) 
+                and (orientation: landscape) 
+                and (-webkit-min-device-pixel-ratio: 1) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 768px) 
+                and (max-device-width: 1024px) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            @media only screen 
+                and (min-device-width: 768px) 
+                and (max-device-width: 1024px) 
+                and (orientation: portrait) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            @media only screen 
+                and (min-device-width: 768px) 
+                and (max-device-width: 1024px) 
+                and (orientation: landscape) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPad Pro 10.5" ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 834px) 
+                and (max-device-width: 1112px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            /* Declare the same value for min- and max-width to avoid colliding with desktops */
+            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+            @media only screen 
+                and (min-device-width: 834px) 
+                and (max-device-width: 834px) 
+                and (orientation: portrait) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            /* Declare the same value for min- and max-width to avoid colliding with desktops */
+            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+            @media only screen 
+                and (min-device-width: 1112px) 
+                and (max-device-width: 1112px) 
+                and (orientation: landscape) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* ----------- iPad Pro 12.9" ----------- */
+
+            /* Portrait and Landscape */
+            @media only screen 
+                and (min-device-width: 1024px) 
+                and (max-device-width: 1366px)
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Portrait */
+            /* Declare the same value for min- and max-width to avoid colliding with desktops */
+            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+            @media only screen 
+                and (min-device-width: 1024px) 
+                and (max-device-width: 1024px) 
+                and (orientation: portrait) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+            /* Landscape */
+            /* Declare the same value for min- and max-width to avoid colliding with desktops */
+            /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+            @media only screen 
+                and (min-device-width: 1366px) 
+                and (max-device-width: 1366px) 
+                and (orientation: landscape) 
+                and (-webkit-min-device-pixel-ratio: 2) {
+                    .jumbotron {
+
+                        background: url(images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    .glasses {
+
+                        background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                        background-size: cover;
+                        background-attachment:scroll !important;
+                        height: 200px; 
+                        width: 100%;
+                        background-color: #fff;
+                    }
+
+            }
+
+
+            /* Standard CSS */
+
+            .jumbotron {
+
+                background: url(/images/jumbotron-bkgd2_qeeeky.png) no-repeat center center fixed; 
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                width: 100%;
+                height: auto;
+            }
+
+            .card-deck-container {
+                font-size: 1.5em;
+            }
+
+            .intro-text {
+                font-size: 1.5em;
+                text-shadow: 2px 2px 5px #231f20;
+            }
+
+            .z-depth-1 {
+                -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+                box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+            }
+
+            .z-depth-2 {
+                -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2),0 6px 10px 0 rgba(0,0,0,0.3);
+            }
+
+            .z-depth-3 {
                 -webkit-box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
                 box-shadow: 0 11px 7px 0 rgba(0,0,0,0.19),0 13px 25px 0 rgba(0,0,0,0.3);
             }
 
-            .main-links {
-                background-color: #eae7dc;
-                font-family: 'Oswald', sans-serif;
+            .jumbotron {
+                background-color: transparent;
+                color: white;
             }
 
+            /* Headers */
+            h1 {
+                font-family: 'Arvo', serif;
+                color: #fff;
+                padding-top: 25%;
+                text-shadow: 2px 2px 5px #231f20;
+            }
+
+            h2 {
+                font-family: 'Arvo', serif;
+                color: #231f20;
+                display: inline-block;
+                position: relative;
+            }
+
+            h2::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                display: inline-block;
+                height: 1.25em;
+                width: 100%;
+                border-bottom: 5px solid #231f20;
+                margin-top: 5px;
+            }
+
+            h3 {
+                font-family: 'Arvo', serif;
+                color: #231f20;
+                font-weight: bold;
+                font-size: 2em;
+            }
+
+            h4 {
+                font-family: 'Open Sans', sans-serif;
+                font-variant: small-caps;
+                font-weight: bold;
+            }
+
+            a {
+                color: #000;
+                font-weight: bold;
+            }
+
+            a:hover {
+                color: #333;
+                font-weight: bold;
+            }
+
+            ::selection {
+                background-color: #666;
+                color: #fff;
+            }
+
+            a::selection {
+                background-color: #666;
+                color: #000;
+            }
+
+            /* Navigation */
+            .navbar {
+                background-color: white;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .navbar a {
+                color: #231f20;
+            }
+
+            .navbar a:hover {
+                font-weight: bold;
+            }
+
+            .navbar-collapse {
+                background-color: white;
+                color: #FFF;
+            }
+
+            .navbar-text {
+                color: #231f20;
+                text-decoration: none;
+            }
+
+            .custom-toggler .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(35,31,32, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+            }
+
+            /* Nav Button*/
+            #myBtn {
+                display: none; /* Hidden by default */
+                position: fixed; /* Fixed/sticky position */
+                bottom: 20px; /* Place the button at the bottom of the page */
+                right: 30px; /* Place the button 30px from the right */
+                z-index: 99; /* Make sure it does not overlap */
+                border: none; /* Remove borders */
+                outline: none; /* Remove outline */
+                background-color: #231f20; /* Set a background color */
+                color: white; /* Text color */
+                cursor: pointer; /* Add a mouse pointer on hover */
+                padding: 15px; /* Some padding */
+                border-radius: 10px; /* Rounded corners */
+                font-size: 18px; /* Increase font size */
+            }
+
+            #myBtn:hover {
+                background-color: #555; /* Add a dark-grey background on hover */
+            } 
+
+            /* Home */
+            .resume-button {
+                background-color: #fff;
+                font-family: 'Arvo', serif;
+                color: #231f20;
+            }
+
+            .resume-button:hover {
+                background-color: #231f20;
+                color: #fff;
+            }
+
+            .btn-outline-dark {
+                border-color: #231f20;
+            }
+
+            /* Skills */
+            .skills {
+                padding-top: 5%;
+                width: 100%;
+            }
+
+            .skills-img {
+                width: 50%;
+            }
+
+            .skills-text {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.75em;
+            }
+
+            .card-deck-container {
+                padding: 0;
+            }
+
+            .card {
+                border: 1px solid black;
+            }
+
+            .card-body {
+                text-align: center;
+            }
+
+            .card-title {
+                font-family: 'Arvo', serif;
+                color: #231f20;
+                font-weight: bold;
+                font-size: 1.25em;
+            }
+
+            /* Projects */
+            #projects {
+                padding: 5% 0;
+            }
+
+            .nav-item {
+                border-radius:0;
+            }
+
+            .nav-pills > li > a {
+                color: #231f20 !important;
+                border: 1px solid black;
+                margin-right: 10px;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+            .nav-pills > li > a.active {
+                background-color: #231f20 !important;
+                color: #ffffff !important;
+
+            }
+
+            .nav-pills > li > a:hover {
+                font-weight: bold;
+            }
+
+            .nav-link-color {
+                color: #231f20;
+            }
+
+            .card-subtitle {
+                font-family: 'Open Sans', sans-serif;
+                font-variant: small-caps;
+                color: #231f20;
+            }
+
+            .tab-content {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.1em;
+            }
+
+            .figure-caption {
+                font-family: 'Arvo', serif;
+            }
+
+            /* Contact */
+            .contact-text {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 1.12em;
+            }
+
+            /* Section Dividers */
+            .glasses {
+
+                background: url(images/troy-logo-cropped_hue1dz.png) center center fixed no-repeat;
+                height: 200px; 
+                width: 100%;
+                background-color: #fff;
+            }
+
+            .black-div {
+                height: 100%;
+                width: 100%;
+                background-color: #231f20;
+                background-attachment: fixed;
+                color: #fff;
+            }
+
+            .aligned-box {
+                margin: auto;
+                width: 100%;
+                padding: 8vh;
+                font-family: 'Arvo', serif;
+                font-size: 3.5vh;
+            }
+
+            /* Notes */
+            /*
+
+            Card deck code: https://www.codeply.com/go/nIB6oSbv6q            
+
+            */
+
+            /* Image Credits */
+            /*
+            adaptive-web-design icon: Icon made by Freepik from www.flaticon.com is licensed by CC 3.0 BY           
+
+            */
+
+            /*
+            <!--
+            <figure class="figure pt-4">
+            <img src="images/original-splc-donation-page.png" class="figure-img img-fluid rounded z-depth-1 " alt="The current, original SPLC donation page.">
+            <figcaption class="figure-caption">The current, original SPLC donation page.</figcaption>
+            </figure>
+            </div>
+            -->
+            */
+
         </style>
-
-
-        <title>Hello, world!</title>
     </head>
+
     <body>
-        <div class="container main">
-            <h1>Let's get you out of here.</h1>
-        </div>
+        <nav id="navigation" class="navbar navbar-expand-lg justify-content-end z-depth-2 container">
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">                    
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="container fixed-bottom main-links">
-            <ul class="nav nav-fill">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Active</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Longer nav link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
+            <div id="navbarText" class="collapse navbar-collapse">
+                <ul class="navbar-nav justify-content-end mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/blog/the-b.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+                <span class="navbar-text">
+                    <a href="https://www.facebook.com/troybdabney" target="_blank">
+                        <i class="fa fa-facebook pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://twitter.com/teebeedee_" target="_blank">
+                        <i class="fa fa-twitter pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/troybdabney/" target="_blank">
+                        <i class="fa fa-linkedin pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://codepen.io/teebeedee_/" target="_blank">
+                        <i class="fa fa-codepen pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://www.behance.net/teebeedee_" target="_blank">
+                        <i class="fa fa-behance pr-4" style="font-size: 24px;"></i>
+                    </a>
+                    <a href="https://github.com/troybdabney" target="_blank">
+                        <i class="fa fa-github" style="font-size: 24px;"></i>
+                    </a>
+                </span>
+            </div>
+        </nav>
+
+        <section id="home">
+            <div class="jumbotron jumbotron-fluid z-depth-2 text-center">
+                <div class="container mt-0 mb-3 home-container">
+                    <h1 class="display-2 main-header">Whoops! Let's Get You Outta Here</h1>
+
+                    <p class="lead pt-4 text-center">
+                        <a class="btn btn-light btn-lg resume-button btn-outline-dark" href="http://troybdabney.com/" role="button" target="_blank">Go Back to My Homepage <i class="fa fa-home pl-1"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <button id="myBtn" onclick="topFunction()" title="Go to top">
+            <i class="fa fa-angle-double-up" style="font-size:36px"></i>
+        </button>
+
+        <!-- Custom JavaScript -->
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    document.getElementById("myBtn").style.display = "block";
+                } else {
+                    document.getElementById("myBtn").style.display = "none";
+                }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>
+
+        <!-- jQuery, Popper.js, and Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
